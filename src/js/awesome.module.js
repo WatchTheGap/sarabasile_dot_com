@@ -1,10 +1,11 @@
 (function() {
   'use strict';
 
-  function test(a, b) {
-    return a+b;
+  angular.module('awesome', ['ui.router'])
+    .config(routerConfig);
 
-  }
+    function routerConfig() {
 
+    }
 
 }());
