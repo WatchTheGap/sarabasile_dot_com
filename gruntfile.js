@@ -36,10 +36,11 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
-      },
+      }
+    },
       sass: {
         allSass: {
-          files:{
+          files: {
             'build/style.css' : 'src/sass/main.scss'
           }
         }
@@ -75,7 +76,6 @@ module.exports = function(grunt) {
           tasks: ['concat', 'babel']
         }
       }
-    }
   });
 
 grunt.loadNpmTasks('grunt-contrib-clean');
@@ -85,8 +85,6 @@ grunt.loadNpmTasks('grunt-babel');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
-grunt.registerTask('build', ['clean', 'copy', 'sass']);
-
-
+grunt.registerTask('build', ['clean', 'concat', 'sass', 'copy']);
 
 };
