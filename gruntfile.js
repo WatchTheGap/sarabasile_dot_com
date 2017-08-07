@@ -36,7 +36,18 @@ module.exports = function(grunt) {
             expand: true
           }
         ]
-      }
+      },
+      bootstrap: {
+        files: [
+          {
+            cwd: 'node_modules/bootstrap/dist/css',
+            src: ['bootstrap.css', 'bootstrap-theme.css'],
+            dest: 'build/',
+            expand: true
+          }
+
+        ]
+      },
     },
       sass: {
         allSass: {
@@ -74,7 +85,7 @@ module.exports = function(grunt) {
         js: {
           files:['src/js/*.js'],
           tasks: ['concat', 'babel']
-        }
+        },
       }
   });
 
