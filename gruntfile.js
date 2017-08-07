@@ -85,7 +85,7 @@ grunt.loadNpmTasks('grunt-babel');
 grunt.loadNpmTasks('grunt-contrib-concat');
 grunt.loadNpmTasks('grunt-contrib-watch');
 
-grunt.registerTask('build', ['clean', 'copy']);
+grunt.registerTask('build', ['clean', 'copy', 'sass']);
 
 
 
