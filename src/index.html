@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head ng-app='awesome'>
+<html ng-app='awesome'>
+  <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
@@ -9,11 +9,23 @@
   </head>
   <body>
     <h1>OMG IT'S A WEBPAGE</h1>
+    <nav>
+      <ul>
+        <li><a ui-sref='home'>home</a></li>
+        <li>about me</li>
+        <li>photography</li>
+        <li>web development</li>
+        <li>contact me</li>
+        <li>legal</li>
+      </ul>
+    </nav>
 
-    <main ui-view class='container'></main>
+    <main ui-view class='container main-view'></main>
+
+    <footer><p>&copy; Sara Basile 2017</p></footer>
 
   </body>
   <script src='angular.js'></script>
-  <script src='//unpkg.com/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='angular-ui-router.js'></script>
   <script src='/js/app.js'></script>
 </html>

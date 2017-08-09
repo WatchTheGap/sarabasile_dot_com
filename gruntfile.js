@@ -17,6 +17,14 @@ module.exports = function(grunt) {
           }
         ]
       },
+      views: {
+        files: [{
+          cwd: 'src/views/',
+          src: ['*.html'],
+          dest: 'build/views/',
+          expand: true
+        }]
+      },
       images: {
         files: [
           {
@@ -32,6 +40,16 @@ module.exports = function(grunt) {
           {
             cwd: 'node_modules/angular',
             src: ['angular.js'],
+            dest: 'build/',
+            expand: true
+          }
+        ]
+      },
+      uirouter: {
+        files: [
+          {
+            cwd: 'node_modules/angular-ui-router/release',
+            src: ['angular-ui-router.js'],
             dest: 'build/',
             expand: true
           }

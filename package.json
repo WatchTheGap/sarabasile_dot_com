@@ -9,8 +9,8 @@
   "author": "Sara Basile",
   "license": "ISC",
   "dependencies": {
-    "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.5",
+    "@uirouter/angularjs": "latest",
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
