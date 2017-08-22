@@ -1,3 +1,18 @@
-.img-block {
-  padding: 10px;
+section {
+  padding: 15px;
+}
+
+.media {
+  border: 5px solid $green;
+
+  img {
+    border: 10px solid $burgundy;
+    transition: 200ms;
+  }
+
+  img:hover {
+    box-shadow: 5px 5px 10px $green;
+    transform:scale(1.05);
+    transition: 200ms ease-in-out;
+  }
 }
