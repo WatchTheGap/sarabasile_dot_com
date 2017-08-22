@@ -1082,11 +1082,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: #c9d5d4;
 }
 input,
 button,
@@ -1102,12 +1102,11 @@ a {
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #baa18b;
   text-decoration: underline;
 }
 a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+
 }
 figure {
   margin: 0;
@@ -3988,7 +3987,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4027,14 +4025,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border: 1px solid transparent;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eee #eee #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
   cursor: default;
-  background-color: #fff;
   border-bottom-color: transparent;
 }
 .nav-tabs.nav-justified {
@@ -4956,12 +4951,14 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: #fac856;
+  background-color: #335144;
+  text-align: center;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+  font-weight: 800;
 }
 .jumbotron p {
   margin-bottom: 15px;
